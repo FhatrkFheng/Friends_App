@@ -1,0 +1,14 @@
+<div class="container py-5 px-5 bg-light rounded-3 ">
+  <h1 class="display-4"><%= friend.first_name %> <%= friend.last_name %></h1>
+  <p class="lead"><%= friend.email %> | <%= friend.phone %> | <%= friend.twitter %></p>
+
+  <div>
+    <%= link_to "Edit this friend", edit_friend_path(@friend), class: "btn btn-dark"%>
+    <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
+    <div class="mt-2">
+      <%= button_to "Destroy this friend", @friend, method: :delete, class: "btn btn-danger"%>
+    <div>
+  </div>
+</div>
+
+
